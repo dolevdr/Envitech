@@ -11,7 +11,7 @@ const Legend = (props) =>{
                     props.colors.map((col, ind)=>(
                         <div key={ind} className='colors'>
                             <div  >
-                                <p >{col.Color} {col.Label}</p>
+                                <div style={{display:'inline'}}><div style={{width:'10px', height:'10px', backgroundColor:col.Color ,position:'relative', top:'15px'}}></div>{col.Label} </div>
                             </div>
                         </div>
                     ))
