@@ -51,7 +51,7 @@ function App() {
       <div style={{ display: "flex", flexDirection: "column", width: "100px" }}>
         {monitor &&
           monitor.map((val) => (
-            <button onClick={() => extractLegendData(legendId)} key={val.Id}>
+            <button onClick={() =>(!legendData)? extractLegendData(legendId):null} key={val.Id}>
               {val.Name}
             </button>
           ))}
